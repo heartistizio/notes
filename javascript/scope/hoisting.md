@@ -4,4 +4,4 @@ A term for the fact that because of compilation declaration statements are "pull
 
 - `var` is initialized with `undefined`
 - `const` and `let` throw error if they are accessed without initialization
-- but yeah don't declare variables under assignment even if it works
+- but yeah don't declare `var` under assignment even if it works
