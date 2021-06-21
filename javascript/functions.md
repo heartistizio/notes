@@ -11,3 +11,4 @@
 - If arrow function is assigned to the variable then why not use the declaration?
 - Same with function expressions.
 - Arrow functions still worthy when we care about keeping parents [this](./objects/this.md) value.
+- Non declaration are not hoisted, need to be put before the code that runs them.

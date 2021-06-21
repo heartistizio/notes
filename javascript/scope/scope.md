@@ -5,7 +5,6 @@
 - it's nested and javascript will look in higher scopes for variables that weren't found
 - there is functional and block scope
 - `var` has functional scope, `const`, `let` have block
-- `var` is initialized with `undefined`, `const` and `let` are not
 
 ## Nesting
 
@@ -69,3 +68,8 @@ var name = "Aleksander";
 
 console.log(name); // "Alek"
 ```
+
+## var vs let vs const
+
+- arguments for only using `let` inside of the intentional block scopes
+- `const` is good for immutable values, but should only be used with primitive values as it is a lying SOB in other cases
