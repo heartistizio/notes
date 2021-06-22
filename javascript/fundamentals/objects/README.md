@@ -1,6 +1,6 @@
 # Fundamentals - Objects
 
 - [Fundamentals](../README.md)
-- [Class](./class.md)
-- [This](./this.md)
+- [`class` keyword](./class.md)
+- [`this` keyword](./this.md)
 - [Prototypes](./prototypes.md)
