@@ -1,6 +1,6 @@
-# Javascript Table of Contents
+# JavaScript - Fundamentals
 
-- [Table of Contents](../README.md#table-of-contents)
+- [JavaScript](../README.md)
 - [Functions](./functions.md)
 - [Scope](./scope/scope.md)
   - [Hoisting](./scope/hoisting.md)
