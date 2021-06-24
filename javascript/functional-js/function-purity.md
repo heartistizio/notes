@@ -10,12 +10,20 @@ Most "functions" in JS code are just procedures. To be a pure function it needs 
 
 It's the function call that matters, not its definition.
 
+
+
+## Referential Transparency
+
+If function call adheres to Referential Transparency then it's pure.
+
+```definition
+A function call can be replaced with its return value and not return any of the rest of the code.
+```
+
 ## Side Effects
 
 Main problem with side effects is that is creates uncertainty. Once they appear reader has to start executing the code. Not all side effects are avoidable. 
 
-- indirect inputs
-- indirect outputs
 - I/O
 - Database Storage
 - Network Calls
@@ -67,7 +75,7 @@ It's ugly, and really hard. But can be used from time to time. But it runs as a 
 
 ## Arguments
 
-Parameters are the labels for arguments - values that are passed in. Shapes of our functions matter,
+Parameters are the labels for arguments - values that are passed in. They should be listed from more general to more specific. Shapes of our functions matter,
 
 ### Higher Order Functions
 
@@ -81,4 +89,4 @@ Different kind of shapes:
 
 - binary - takes two inputs, returns one output
 
-- enary - function that takes more inputs
+- n-ary (enary) - function that takes more inputs
