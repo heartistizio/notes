@@ -10,12 +10,24 @@
 
 Functional programming is math. That mean that the code you write is provable. That means that we can be certain what code will do.
 
-## Functions
+## Composition
 
-Most "functions" in JS code are just procedures. To be a pure function it needs to:
+Output of one function immediately becomes an input of another.
 
-- have output that is related to the input
-- call only other functions
-- don't have side effects
+```js
+function compose(fn2, fn1) {
+    return function composed(v) {
+        return fn2(fn1(v));
+    }
+}
+```
 
-## Side Effects
+## Closure
+
+[Fundamentals Closure](../fundamentals/scope/closure.md)
+
+```
+Closure is when a function "remembers" the variables around it even when that function is executed elsewhere.
+```
+
+Closure is not necessarily functionally pure. 
