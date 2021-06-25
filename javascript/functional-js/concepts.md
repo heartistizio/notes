@@ -16,13 +16,11 @@ Output of one function immediately becomes an input of another.
 
 ```js
 function compose(fn2, fn1) {
-    return function composed(v) {
-        return fn2(fn1(v));
-    }
+  return function composed(v) {
+    return fn2(fn1(v));
+  };
 }
 ```
-
-
 
 ## Closure
 
@@ -32,18 +30,17 @@ function compose(fn2, fn1) {
 Closure is when a function "remembers" the variables around it even when that function is executed elsewhere.
 ```
 
-Closure is not necessarily functionally pure. 
+Closure is not necessarily functionally pure.
 
 ## Eager vs Lazy
 
-Lazy, or deferred, execution. Worth using if we're not sure that the function is gonna be called. Downside: the work is being done every single time. 
+Lazy, or deferred, execution. Worth using if we're not sure that the function is gonna be called. Downside: the work is being done every single time.
 
 ```js
 function repeater(count) {
-
-    return function allTheAs() {
-        return "".padStart(count, "A");
-    }
+  return function allTheAs() {
+    return "".padStart(count, "A");
+  };
 }
 ```
 
@@ -51,17 +48,17 @@ Eager does the work once immediately. Worth using if function is often called. D
 
 ```js
 function repeater(count) {
-    var str = "".padStart(count, "A");
+  var str = "".padStart(count, "A");
 
-    return function allTheAs() {
-        return str;
-    }
+  return function allTheAs() {
+    return str;
+  };
 }
 ```
 
 ## Memoization
 
-Memoization enables to do the work only once, but only do the work when called for. 
+Memoization enables to do the work only once, but only do the work when called for.
 
 Takes a lazy function and wraps in a code that checks if inputs are the same as one of the previous calls. If yes then it returns the stored already computed value, if not it computes it, stores it and returns.
 
@@ -88,4 +85,3 @@ There can be multiple arguments provided at the time.
 Partial application take some of the input now, rest at the call.
 
 Currying takes no immediate input, takes input one at the time.
-
