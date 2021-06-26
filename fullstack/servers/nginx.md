@@ -49,4 +49,33 @@ Macro for doing something.
 try_files
 ```
 
-###
+### Redirect
+
+```nginx
+location /help {
+    return 301 https://developer.mozilla.org/en-US/;
+}
+```
+
+### Subdomain
+
+Nginx can create many servers on one server.
+
+```nginx
+server {
+    listen 80;
+    listen [::]80; # IPV6 notation
+
+    server_name test.gojo.one;
+
+    location / {
+        proxy_pass http://localhost:3000;
+    }
+}
+```
+
+### File compression
+
+Nginx automatically compresses and unpacks files sent by default.
+
+`/etc/nginx/nginx.conf`

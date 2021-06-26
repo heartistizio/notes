@@ -4,7 +4,7 @@
 - [Architecture](./architecture.md)
 - [Application](./application.md)
 - [Nginx](./nginx.md)
-- [Security](./security.md)
+- [Operating System](./os.md)
 - [Setup](./setup.md)
 
 Server is a computer that responds to requests.
@@ -22,11 +22,3 @@ Most of the stuff needs just a fraction of the server, so they are isolated from
 ## VPS
 
 Virtual Private Server - piece of a server. Possible thanks to threading and process isolation.
-
-## Operating Systems
-
-MS DOS vs unix
-
-Ubuntu is the most popularion Linux distribution.
-
-Linux runs on principle of two layers - kernel that talks to the machine layer and utilities that usually do one thing and interact with the kernel.
