@@ -4,7 +4,7 @@
 
 ## What's Internet?
 
-A system of globally publicly interconnected devices. When it's a private connection it's called Intranet. 
+A system of globally publicly interconnected devices. When it's a private connection it's called Intranet.
 
 LAN - local area network
 
@@ -12,14 +12,18 @@ WAN - wide area network
 
 ## How does it work?
 
-It's relies on IP - Internet Protocol - a protocol that defines format of data, how to read it, write it and send it back.
+Domain hits a nameserver. Nameserver looks up a DNS record and returns an IP that gets passed through routers, nodes and switches and eventually hits the server. Server routes further.
+
+### Internet Protocol
+
+A protocol that defines format of data, how to read it, write it and send it back.
 
 ### IP Address
 
 Label assigned to the device connected to the internet.
 
 IPv4 - 4.3 billion addresses
-IPv6 - 3.4 * 10^38
+IPv6 - 3.4 \* 10^38
 
 ### TCP
 
@@ -51,6 +55,11 @@ subdomain.domain.tld
 
 Records are kept in name servers.
 
+#### DNS Record Types
+
+- **A record** - name to IP
+- **CNAME** - name to name
+
 ### ICMP
 
 Protocol for health checks.
@@ -59,7 +68,7 @@ Protocol for health checks.
 
 Little bit of information you can transmit. "Envelope" with an address, addressee and the data.
 
-It's mostly metadata in form of headers. 
+It's mostly metadata in form of headers.
 
 ## Net Neutrality
 
