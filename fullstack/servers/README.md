@@ -3,6 +3,7 @@
 - [Fullstack](../README.md)
 - [Architecture](./architecture.md)
 - [Application](./application.md)
+- [Network](./network.md)
 - [Nginx](./nginx.md)
 - [Operating System](./os.md)
 - [Setup](./setup.md)
