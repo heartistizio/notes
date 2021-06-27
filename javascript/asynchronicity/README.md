@@ -1,10 +1,21 @@
 # Javascript - Asynchronity
 
 - [JavaScript](../README.md)
-- [Concurrency](./concurrency.md)
+- [Communicating Sequential Processes](./csp.md)
 - [Observables](./observables.md)
 - [Promises}](./promises.md)
 
+## Parallel  vs Asynchronicity
+
+Parallelism is usually expressed through threads. At any given moment one core can be doing one operation and another could be doing the same. OS have virtual threads and schedule them. It's about optimization.
+
+Asynchronicity runs on a single thread. Event loop allows scheduling of micro tasks so that some tasks do not block the execution.
+
+_Note_: web workers try to bridge the gap, spin a thread, but it's a browser thing. They have to communicate in single threaded fashion anyway.
+
+# Concurrency
+
+Two higher level tasks happening within the same timeframe. 
 
 ## Problems with `async` and `await`
 
