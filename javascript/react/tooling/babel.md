@@ -11,5 +11,3 @@
 ["@babel/preset-react", { "runtime": "automatic" }]
 ```
 Allows transpilation of JSX.
-
-
