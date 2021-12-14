@@ -41,6 +41,6 @@ For values `x` and `y`.
 
 ## How to avoid equality corner cases?
 
-- `==` with 0 or `""` (and empty space strings)
-- `==` with non-primitives
-- `==` with `true` or `false`
+- `===` with 0 or `""` (and empty space strings)
+- `===` with non-primitives
+- `===` with `true` or `false`
